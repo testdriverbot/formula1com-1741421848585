@@ -1,0 +1,39 @@
+version: 4.2.13
+session: 67cbff2719d282fbe88f6add
+steps:
+  - prompt: Click the "Sign In" button on the top right.
+    commands:
+      - command: hover-text
+        text: SIGN IN
+        description: sign in button on the top right of the header
+        action: click
+  - prompt: Click the "Sign In" button on the top right.
+    commands:
+      - command: hover-text
+        text: ACCEPT ALL
+        description: accept all cookies button on the cookie consent popup
+        action: click
+      - command: hover-text
+        text: SIGN IN
+        description: sign in button on the top right of the header
+        action: click
+  - prompt: Enter credentials into the username and password fields.
+    commands:
+      - command: hover-text
+        text: Email address
+        description: email address input field
+        action: click
+      - command: type
+        text: testuser@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: password123
+  - prompt: Click the "Sign In" button to submit.
+    commands:
+      - command: hover-text
+        text: SIGN IN
+        description: sign in button below the password field
+        action: click
