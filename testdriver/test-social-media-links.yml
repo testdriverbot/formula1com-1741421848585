@@ -1,0 +1,43 @@
+version: 4.2.13
+session: 67cbff3019d282fbe88f6ae4
+steps:
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: hover-text
+        text: ACCEPT ALL
+        description: accept all cookies button in the popup
+        action: click
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
+  - prompt: Scroll to the bottom of the webpage.
+    commands:
+      - command: scroll
+        direction: down
+        method: keyboard
+        amount: 3000
