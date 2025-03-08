@@ -1,0 +1,19 @@
+version: 4.2.13
+session: 67cbff2819d282fbe88f6adf
+steps:
+  - prompt: Click on the "Latest" link in the navigation menu.
+    commands:
+      - command: hover-text
+        text: ACCEPT ALL
+        description: accept all cookies button in the cookie consent dialog
+        action: click
+      - command: hover-text
+        text: Latest
+        description: latest link in the navigation menu
+        action: click
+  - prompt: >-
+      Assert that the "Latest" news page loads successfully.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: the "Top Stories" section is visible on the page
